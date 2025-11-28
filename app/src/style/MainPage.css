@@ -1,0 +1,120 @@
+/* Main Container */
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#f7a4d0, #f29cd8);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* Sidebar Menu Icon */
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
+}
+
+/* Calendar Container */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border: 3px solid #000;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+}
+
+/* Calendar Title */
+.calendar-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Calendar Table */
+.calendar-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fce7f3;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0.6rem;
+  width: 50px;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn.yellow {
+  background: #ffc72c;
+  color: #000;
+}
+
+/* Blue Cards */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.blue-card {
+  width: 60px;
+  height: 100px;
+  background: #8cc8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Month Sidebar */
+.month-sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: linear-gradient(#ff8dcf, #ff85cb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.month-item {
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.month-item.active {
+  background: #000;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  transform: translateX(-10px);
+}
